@@ -5,7 +5,7 @@ services:
     image: postgres:10-alpine
     container_name: ${USER}_postgres
     volumes:
-      - ./data:/var/lib/postgresql/data/pgdata
+      - ./var/data:/var/lib/postgresql/data/pgdata
     environment:
       - PGDATA=/var/lib/postgresql/data/pgdata
       - POSTGRES_DB=${POSTGRES_DB}
