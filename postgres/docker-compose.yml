@@ -23,3 +23,6 @@ services:
     command: crond -f -d 2
     volumes:
       - ./var/backups:/var/backups
+    environment:
+      - PGUSER=${POSTGRES_USER}
+      - PGPASSWORD=${POSTGRES_PASSWORD}
