@@ -2,3 +2,4 @@
 .env
 *.tmp
 *.bak
+backup.yml

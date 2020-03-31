@@ -1,0 +1,17 @@
+---
+defaults:
+    tmpdir: /tmp
+
+backups:
+  - type: database
+    url: postgres://postgres:5432/whitepage_dfbqkes
+    to: [bucket1]
+    name: whitepage.xxx/postgres/{mm}-{dd}.sql
+    tags: app, postgres
+
+vaults:
+  bucket1:
+    service: s3
+    region: eu-central-1
+    name: 05bit-backup1
+...
