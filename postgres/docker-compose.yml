@@ -4,6 +4,7 @@ services:
   postgres:
     image: postgres:10-alpine
     container_name: ${USER}_postgres_1
+    restart: unless-stopped
     volumes:
       - ./var/data:/var/lib/postgresql/data/pgdata
     environment:
