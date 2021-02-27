@@ -1,6 +1,6 @@
 #!/bin/sh
 source .env
-container_name="${USER}_postgres"
+container_name="${USER}_postgres_1"
 owner=${1}
 new_db=${2}
 
